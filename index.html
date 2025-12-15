@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дашборд</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Дашборд - розовый персональный организатор</h1>
+            <div class="controls">
+                <button class="btn btn-save" onclick="widgetManager.saveDashboard()">
+                    💾 Сохранить конфигурацию
+                </button>
+                <button class="btn btn-reset" onclick="widgetManager.resetDashboard()">
+                    🔄 Сбросить настройки
+                </button>
+            </div>
+        </div>
+        
+        <div class="dashboard" id="dashboard">
+            <!-- Виджеты будут добавляться здесь динамически -->
+        </div>
+
+        <div class="available-widgets">
+            <h2>Доступные виджеты</h2>
+            <div class="widgets-list" id="availableWidgets">
+                <!-- Доступные виджеты для добавления -->
+            </div>
+        </div>
+    </div>
+
+    <div id="statusMessage" class="status-message"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
